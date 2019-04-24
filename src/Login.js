@@ -3,12 +3,20 @@ class Login extends React.Component {
     render() {
         return(
             <div>
-            
-    <label >username : <input name="username" id="username" type="text" /></label> 
-    <br/> <label >password : <input name="password" id="password" type="password" /></label> 
-    <label>confirm password: <input type="password" name="confirm_password" id="confirm_password" /> </label> 
-    <br/>
-    <label> <input type="submit" name="submit" value="submit" /> </label>
+            <p>Hello Sign-in</p>
+            <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control-md" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control-md" id="exampleInputPassword1" placeholder="Password"/>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
        </div>
         );
     }
